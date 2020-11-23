@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="page">
@@ -51,7 +51,7 @@
         <div class="hero-box">
              <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
              <div class="button-box">
-                 <button type="button" class="button">Заказать услугу</button>
+                 <button type="button" class="button" data-modal-open>Заказать услугу</button>
              </div>
         </div>
          </section>
@@ -86,13 +86,19 @@
              <ul class="what-we-do-list list">
                  <li class="what-we-do-img">
                      <img src="./img/img.png" alt="ввод текста на планшет" width="370px" height="294px">
+                     <div class="description-box"></div>
+                     <p class="what-we-do-description">Десктопные приложения</p>
                  </li>
                  <li class="what-we-do-img">
                      <img src="./img/img(2).png" alt="ноутбук" width="370px" height="294px">
+                     <div class="description-box"></div>
+                     <p class="what-we-do-description">Мобильные приложения</p>
                  </li>
                  <li class="what-we-do-img">
                      <img src="./img/img(1).png" alt="планшет" width="370px" height="294px">
-                 </li>
+                      <div class="description-box"></div>
+                        <p class="what-we-do-description">Дизайнерские решения</p>
+                    </li>
              </ul>
             </div>
          </section>
@@ -345,5 +351,13 @@
          </div>
      </footer>
 
+    <!--modal windows-->
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>X</button>
+    </div>
+</div>
+
+<script src="./js/modal.js"></script>
 </body>
 </html>
